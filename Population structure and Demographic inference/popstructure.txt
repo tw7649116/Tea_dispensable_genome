@@ -1,5 +1,7 @@
 # Step1: Paired-end reads trimming
+```
 java -jar ~/soft/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 50 -phred33 -summary Read.summary Read_f1.fq.gz Read_r2.fq.gz Read_f1.clean.fq.gz Read1.unmapped.fq.gz Read_r2.clean.fq.gz Read2.unmapped.fq.gz LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:20
+```
 
 # Step2: mapping, bam convert and sorting
 bwa mem -M -t 20 -R "@RG\tID:Read\tSM:Read\tPL:Illumina" Genome.fasta Read_f1.fq.gz Read_r2.f1.gz | sambamba-0.8.0-linux-amd64-static view -t 20 -f bam -S /dev/stdin | sambamba-0.8.0-linux-amd64-static sort -m 60G --tmpdir=./ -t 20 -o Read.sort.bam /dev/stdin
