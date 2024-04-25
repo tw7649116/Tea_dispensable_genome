@@ -3,8 +3,7 @@ Here, we extensively analyzed the genome sequencing data of 363 diverse tea plan
 
 # Content
 Pipelines and relevant scripts for:
-- Variation and Population structure
-- Demographic inference
+- Population structure and Demographic inference
 - Genetic diversity and selection signatures
 - Structural variation
 - Dispensable genome and PAV
