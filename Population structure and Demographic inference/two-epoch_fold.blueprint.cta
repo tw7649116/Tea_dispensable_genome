@@ -1,0 +1,26 @@
+#example blueprint file
+#input setting
+popid: cta # id of the population (no white space)
+nseq: 36 # number of sequences
+L: 19611481 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 1958185 1158155 671068 492003 410519 361973 328031 301950 283632 268336 256619 247937 243248 241257 248543 272310 330795 174474
+# snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 	8	17	25	34 # number of random break points for each try (separated by white space)
+project_dir: cta # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 100 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 6.5e-9 # assumed mutation rate per site per generation
+year_per_generation: 3 # assumed generation time (in years)
+#plot setting
+plot_title: cta_two-epoch_fold # title of the plot
+xrange: 0,0 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
