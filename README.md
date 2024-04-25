@@ -7,7 +7,7 @@ Pipelines and relevant scripts for:
 - Genetic diversity and selection signatures
 - Structural variation
 - Dispensable genome and PAV
-- Phylogenetics
+
 
 # Citation
 
