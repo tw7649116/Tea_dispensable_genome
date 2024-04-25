@@ -12,3 +12,5 @@ For detail please see  https://github.com/czc/nb_distribution
 ~/soft/SURVIVOR/Debug/SURVIVOR stats all.merge.50percent.vcf -1 -1 -1 all_merge.summary
 ```
 The 01 coding column of the samples were then isolated from the merged vcf file.
+
+SV affected genes were identified using a in-house perl script (Get_harbor_gene.pl).
