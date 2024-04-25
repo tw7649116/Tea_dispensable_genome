@@ -1,9 +1,14 @@
 # Preparation
 •	Data preparation
+
 •	•	clean fastq
+
 •	•	reference genome
+
 •	•	nt database, plant.taxid.acc.txt
+
 •	Installation preparation
+
 •	•	BWA, samtools, SOAPdenovo, seqtk, cd-hit, blast, RepeatMasker, Augustus, Maker
 
 # Step1: mapping clean fastq to reference genome, convert the output file to bam format
