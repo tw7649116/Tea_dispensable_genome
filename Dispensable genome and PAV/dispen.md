@@ -12,7 +12,8 @@
 •	•	BWA, samtools, SOAPdenovo, seqtk, cd-hit, blast, RepeatMasker, Augustus, Maker
 
 # Step1: mapping clean fastq to reference genome, convert the output file to bam format
-see 
+
+see population structure part
 
 # Step2: extract unaligned reads
 ```
